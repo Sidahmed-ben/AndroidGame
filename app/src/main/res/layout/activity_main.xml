@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cube_fond"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_marginTop="20dp"
+            android:text = "Puzzle"
+            android:layout_marginHorizontal="20dp"
+            android:id = "@+id/Puzzle_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyButtonStyle"
+            android:textColor="@color/orange"
+            ></Button>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:text = "Trouvez la paire"
+            android:layout_marginHorizontal="20dp"
+            android:id = "@+id/Trouvez_la_paire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyButtonStyle"
+            android:textColor="@color/orange"
+
+
+            ></Button>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:text = "Calcul menatl"
+            android:layout_marginHorizontal="20dp"
+            android:id = "@+id/Calcul_mental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+
+            style="@style/MyButtonStyle"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Jeux Cognitifs"
+            android:textStyle="italic"
+            android:textColor="@color/orange"
+            android:textSize="40dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lion"
+    tools:context=".Calcul_mental">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="score : 0 "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="-5dp"
+                    android:padding="20dp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/chronometer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/cercle_bleu"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="60dp"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_gauche"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/operand"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/night_bleu"
+                    android:textSize="50dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_operation"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="X"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_droite"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/operand"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/night_bleu"
+                    android:textSize="50dp"></TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center|top">
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+
+                <Button
+                    android:id="@+id/Valider_reponse"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp"
+                    android:text="Valider"
+                    android:textColor="@color/orange"
+                    style="@style/MyButtonStyle">
+
+                </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
